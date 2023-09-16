@@ -1,3 +1,7 @@
+import Button from "../_components/common/Button";
+import TextArea from "../_components/common/TextArea";
+import TextField from "../_components/common/TextField";
+
 export default function Page() {
   return (
     <div className="xs:mt-20 md:mt-5 mb-10">
@@ -20,40 +24,12 @@ export default function Page() {
       </div>
       <hr className="border-dashed mt-3 border-opacity-50 border-white" />
       <div className="grid grid-cols-2 gap-8 mt-5">
-        <div className="xs:col-span-2 md:col-span-1">
-          <div className="pb-8">
-            <input
-              placeholder="Name"
-              type="text"
-              className=" focus:outline-none text-sm w-full border-opacity-10 pb-3 border-b border-white bg-transparent"
-            />
-          </div>
-          <div className="pb-8">
-            <input
-              placeholder="Email"
-              type="text"
-              className=" focus:outline-none text-sm  w-full border-opacity-10 pb-3 border-b border-white bg-transparent"
-            />
-          </div>
-          <div className="pb-8">
-            <input
-              placeholder="Subject"
-              type="text"
-              className=" focus:outline-none text-sm  w-full border-opacity-10 pb-3 border-b border-white bg-transparent"
-            />
-          </div>
-          <div className="pb-8">
-            <textarea
-              rows={6}
-              placeholder="Message"
-              className="w-full focus:outline-none bg-transparent border-b border-opacity-10 border-white"
-            ></textarea>
-          </div>
-          <div className="">
-            <button className="border px-6  py-[0.7rem] text-sm border-opacity-10 border-white">
-              Send Message
-            </button>
-          </div>
+        <div className="xs:col-span-2 md:col-span-1 space-y-8">
+          <TextField placeholder="Name" />
+          <TextField placeholder="Email" />
+          <TextField placeholder="Subject" />
+          <TextArea rows={6} placeholder='Message'/>
+          <Button>Send Message</Button>
         </div>
         <div className="xs:col-span-2 md:col-span-1">
           <h2 className="text-3xl xs:text-2xl">Contect Information</h2>
@@ -119,7 +95,9 @@ export default function Page() {
                   />
                 </svg>
               </div>
-              <span className="ml-3 xs:text-sm">waiyanlinn.lion@outlook.com</span>
+              <span className="ml-3 xs:text-sm">
+                waiyanlinn.lion@outlook.com
+              </span>
             </li>
           </ul>
         </div>
