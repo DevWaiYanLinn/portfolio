@@ -15,7 +15,7 @@ export default function SideBar({ sideBar }: { sideBar: boolean }) {
     <>
       <div
         ref={sideBarRef}
-        className="h-screen z-50 overflow-scroll xs:absolute xs:-ml-[200px] xs:top-0 md:sticky md:ml-0 w-[200px] bg-zinc-900 border-r border-opacity-10 border-[#F5DEB3]"
+        className="h-screen z-50 xs:absolute xs:-ml-[200px] xs:top-0 md:sticky md:ml-0 w-[200px] bg-zinc-900 border-r border-opacity-10 border-[#F5DEB3]"
       >
         <div className="flex-col flex justify-between h-full">
           <div>
@@ -149,9 +149,6 @@ export default function SideBar({ sideBar }: { sideBar: boolean }) {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="flex justify-center flex-col">
-            <div></div>
           </div>
         </div>
       </div>
