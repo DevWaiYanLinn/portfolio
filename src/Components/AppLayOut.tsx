@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import SideBar from "./SideBar";
 import { usePathname } from "next/navigation";
 export default function AppLayOut({ children }: { children: any }) {
