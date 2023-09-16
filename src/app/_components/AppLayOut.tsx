@@ -38,7 +38,7 @@ export default function AppLayOut({ children }: { children: any }) {
       <div className="flex">
         <SideBar sideBar={sideBar} />
         <div className=" bg-zinc-900 w-full h-screen overflow-y-scroll">
-          <div className="xs:px-6 px-10 md:mt-10 text-white">{children}</div>
+          <div className="xs:px-6 md:px-10 text-white">{children}</div>
         </div>
       </div>
     </>

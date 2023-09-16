@@ -21,9 +21,9 @@ export default function SideBar({ sideBar }: { sideBar: boolean }) {
           <div>
             <div className="relative">
               <img src="/p.jpeg" alt="Profile" />
-              <div className="absolute bottom-0 py-1 left-0 w-full text-lg text-center g-bg text-white ADLaM-font">
+              {/* <div className="absolute bottom-0 py-1 left-0 w-full text-lg text-center g-bg text-white ADLaM-font">
                 WAI YAN LIN
-              </div>
+              </div> */}
             </div>
             <ul className="flex-col flexs mt-2">
               <li className="nav-item">
@@ -128,7 +128,7 @@ export default function SideBar({ sideBar }: { sideBar: boolean }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a href="" className="nav-link">
+                <Link href="/contact" className="nav-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -145,8 +145,8 @@ export default function SideBar({ sideBar }: { sideBar: boolean }) {
                     />
                   </svg>
 
-                  <span>RESUME</span>
-                </a>
+                  <span>CONTACT</span>
+                </Link>
               </li>
             </ul>
           </div>

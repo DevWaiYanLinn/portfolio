@@ -32,9 +32,9 @@ export default function Page() {
             sizes="100vw"
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
-          <div className="xs:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Python</p>
-            <p className="mt-3">Python Mini Order System</p>
+          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
+            <p>Magic Food Mini Order System</p>
+            <p className="mt-3 text-xs">Python</p>
           </div>
         </div>
         <div className=" border border-white border-opacity-20 pb-10">
@@ -46,9 +46,9 @@ export default function Page() {
             sizes="100vw"
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
-          <div className="ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Javascript</p>
-            <p className="mt-3">Fastify MVC</p>
+          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
+            <p>Fastify MVC</p>
+            <p className="mt-3 text-xs">Node.JS</p>
           </div>
         </div>
         <div className=" border border-white border-opacity-20 pb-10">
@@ -60,9 +60,23 @@ export default function Page() {
             sizes="100vw"
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
-          <div className="ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Javascript</p>
-            <p className="mt-3">Lazy Loading Image</p>
+          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
+            <p>Lazy Loading Image</p>
+            <p className="mt-3 text-xs">Javascript</p>
+          </div>
+        </div>
+        <div className=" border border-white border-opacity-20 pb-10">
+          <Image
+            src={"/blogs/javascript.svg"}
+            alt="javascript"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "250px", objectFit: "cover" }}
+          />
+          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
+            <p>Myanmar's Townships</p>
+            <p className="mt-3 text-xs">HTML, CSS, Javascript</p>
           </div>
         </div>
       </div>
