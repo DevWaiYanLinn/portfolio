@@ -45,7 +45,7 @@ export default function NavList() {
         </Link>
       </li>
       <li className="nav-item">
-        <a href="#" className="nav-link">
+        <Link href="/resumes" className="nav-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -62,7 +62,7 @@ export default function NavList() {
             />
           </svg>
           <span>RESUME</span>
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
         <a href="#" className="nav-link">
