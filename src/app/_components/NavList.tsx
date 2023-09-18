@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavSelect from "./common/NavSelect";
 
 export default function NavList() {
   return (
@@ -125,6 +126,7 @@ export default function NavList() {
           <span>CONTACT</span>
         </Link>
       </li>
+      <NavSelect/>
     </ul>
   );
 }
