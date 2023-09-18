@@ -13,8 +13,8 @@ export default function AppLayOut({ children }: { children: any }) {
   }, [path]);
   return (
     <>
-      <div className="md:hidden top-0 right-0 absolute w-full flex justify-between items-center xs:px-6 px-10 p-3 bg-zinc-900">
-        <h2 className="text-2xl ADLaM-font text-white">
+      <div className="md:hidden z-50 top-0 right-0 absolute w-full flex justify-between items-center xs:px-6 px-10 p-3 bg-zinc-900">
+        <h2 className="text-2xl font-serif text-white">
           WAI YAN LIN
         </h2>
         <button onClick={handleSideBar}>

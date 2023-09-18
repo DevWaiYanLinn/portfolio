@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div className="xs:mt-20 md:mt-5 mb-10">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl xs:text-2xl">Contact Me.</h1>
+        <h1 className="text-3xl xs:text-2xl font-serif uppercase">Contact Me.</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -32,7 +32,7 @@ export default function Page() {
           <Button>Send Message</Button>
         </div>
         <div className="xs:col-span-2 md:col-span-1">
-          <h2 className="text-3xl xs:text-2xl">Contect Information</h2>
+          <h2 className="text-3xl xs:text-2xl font-serif uppercase">Contect Information</h2>
           <ul className="flex flex-col space-y-10 mt-8">
             <li className="flex items-center">
               <div>

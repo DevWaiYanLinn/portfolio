@@ -33,7 +33,7 @@ export default function Page() {
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
           <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Magic Food Mini Order System</p>
+            <p>Food Mini Order System</p>
             <p className="mt-3 text-xs">Python</p>
           </div>
         </div>

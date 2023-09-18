@@ -1,15 +1,15 @@
 export default function Page() {
   return (
     <>
-      <div className="flex justify-between items-center">
-        <h1 className="text-3xl">About Me.</h1>
+      <div className="mt-20 md:mt-5 flex justify-between items-center">
+        <h1 className="md:text-3xl xs:text-2xl font-serif uppercase">About Me.</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-10 h-10"
+          className="w-10 h-10 xs:w-8 ws:h-8"
         >
           <path
             className="text-white"
@@ -22,7 +22,7 @@ export default function Page() {
       <hr className="border-dashed mt-3" />
       <div className="mt-6 flex justify-between flex-wrap">
         <div className="md:w-[70%] xs:w-full xs:mb-5 md:mb-0">
-          <h2 className="text-2xl xs:text-xl">Backend Developer</h2>
+          <h2 className="text-2xl xs:text-xl font-serif uppercase">Backend Developer</h2>
           <p className="mt-3 xs:text-sm md:text-inherit !leading-7">
             Greetings, I'm Wai Yan Lin, a graduate of the University of Computer
             Studies Maubin. My journey in the world of technology commenced with
@@ -57,7 +57,7 @@ export default function Page() {
           </p>
         </div>
         <div className="md:w-[25%] xs:w-full">
-          <h2 className="text-2xl xs:text-xl">Personal Information</h2>
+          <h2 className="text-2xl xs:text-xl font-serif uppercase">Personal Information</h2>
           <ul className="mt-3 xs:text-sm md:text-inherit !leading-7">
             <li className="flex">
               <span>Name :&nbsp;</span>
@@ -87,7 +87,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mt-10 ">
-        <h2 className="text-center">
+        <h2 className="text-center font-serif uppercase">
           <span className="border-b pb-2 xs:text-xl text-2xl border-dashed">
             SERVICES
           </span>
@@ -110,7 +110,7 @@ export default function Page() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg mt-3 xs:text-md">Web Development</h3>
+            <h3 className="text-lg mt-3 xs:text-md font-serif uppercase">Web Development</h3>
             <p className="mt-3 text-center xs:text-sm md:text-inherit !leading-7">
               Amet aspernatur delectus maxime ducimus similique Ratione
               asperiores corporis provident aut libero
@@ -133,7 +133,7 @@ export default function Page() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg mt-3 xs:text-md">Mobile Development</h3>
+            <h3 className="text-lg mt-3 xs:text-md font-serif uppercase">Mobile Development</h3>
             <p className="mt-3 text-center xs:text-sm md:text-inherit !leading-7">
               Amet aspernatur delectus maxime ducimus similique Ratione
               asperiores corporis provident aut libero
@@ -156,7 +156,7 @@ export default function Page() {
                 />
               </svg>
             </div>
-            <h3 className="ext-lg mt-3 xs:text-md3">Comming Soon</h3>
+            <h3 className="ext-lg mt-3 xs:text-md3 font-serif uppercase">Comming Soon</h3>
             <p className="mt-3 text-center xs:text-sm md:text-inherit !leading-7">
               Amet aspernatur delectus maxime ducimus similique Ratione
               asperiores corporis provident aut libero
