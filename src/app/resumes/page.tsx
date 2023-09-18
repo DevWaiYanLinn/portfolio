@@ -2,7 +2,7 @@ import PorgressBar from "./_components/ProgressBar";
 
 export default function Page() {
   return (
-    <div className="xs:mt-20 md:mt-5 mb-10 space-y-10">
+    <div className="space-y-10">
       <div>
         <h2 className="text-center uppercase">
           <span className="border-b pb-2 xs:text-xl text-2xl border-dashed font-serif">

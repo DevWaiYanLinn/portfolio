@@ -1,12 +1,13 @@
 import Button from "../_components/common/Button";
 import TextArea from "../_components/common/TextArea";
 import TextField from "../_components/common/TextField";
+import Typography from "../_components/common/Typography";
 
 export default function Page() {
   return (
-    <div className="xs:mt-20 md:mt-5 mb-10">
+    <div className="mb-10">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl xs:text-2xl font-serif uppercase">Contact Me.</h1>
+        <Typography element="h1">Contact Me.</Typography>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

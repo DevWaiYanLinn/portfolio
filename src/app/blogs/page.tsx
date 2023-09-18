@@ -1,17 +1,18 @@
 import Image from "next/image";
+import Typography from "../_components/common/Typography";
 
 export default function Page() {
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl">My Blog.</h1>
+        <Typography element="h1">My Blog.</Typography>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          className="w-10 h-10"
+          className="w-10 h-10 xs:w-8 ws:h-8"
         >
           <path
             className="text-white"
@@ -25,6 +26,7 @@ export default function Page() {
       <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-10">
         <div className=" border border-white border-opacity-20 pb-10">
           <Image
+            loading="lazy"
             src={"/blogs/python.svg"}
             alt="food-order"
             width={0}
@@ -39,6 +41,7 @@ export default function Page() {
         </div>
         <div className=" border border-white border-opacity-20 pb-10">
           <Image
+            loading="lazy"
             src={"/blogs/node-js.svg"}
             alt="node-js"
             width={0}
@@ -53,6 +56,7 @@ export default function Page() {
         </div>
         <div className=" border border-white border-opacity-20 pb-10">
           <Image
+            loading="lazy"
             src={"/blogs/javascript.svg"}
             alt="javascript"
             width={0}
@@ -67,6 +71,7 @@ export default function Page() {
         </div>
         <div className=" border border-white border-opacity-20 pb-10">
           <Image
+            loading="lazy"
             src={"/blogs/javascript.svg"}
             alt="javascript"
             width={0}

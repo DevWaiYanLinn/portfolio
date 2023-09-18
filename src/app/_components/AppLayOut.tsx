@@ -12,11 +12,9 @@ export default function AppLayOut({ children }: { children: any }) {
     setSideBar(false);
   }, [path]);
   return (
-    <>
-      <div className="md:hidden z-50 top-0 right-0 absolute w-full flex justify-between items-center xs:px-6 px-10 p-3 bg-zinc-900">
-        <h2 className="text-2xl font-serif text-white">
-          WAI YAN LIN
-        </h2>
+    <div className="bg-zinc-900">
+      <div className="border-b border-white border-opacity-5 md:hidden z-50 top-0 right-0 absolute w-full flex justify-between items-center xs:px-6 px-10 p-3 ">
+        <h2 className="text-2xl font-serif text-white">WAI YAN LIN</h2>
         <button onClick={handleSideBar}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,12 +33,13 @@ export default function AppLayOut({ children }: { children: any }) {
           </svg>
         </button>
       </div>
+      <div className="xs:pt-20 md:pt-0"></div>
       <div className="flex">
         <SideBar sideBar={sideBar} />
         <div className=" bg-zinc-900 w-full h-screen overflow-y-scroll">
           <div className="xs:px-6 md:px-10 text-white">{children}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

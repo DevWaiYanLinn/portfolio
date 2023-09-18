@@ -1,8 +1,10 @@
+import Typography from "../_components/common/Typography";
+
 export default function Page() {
   return (
     <>
-      <div className="mt-20 md:mt-5 flex justify-between items-center">
-        <h1 className="md:text-3xl xs:text-2xl font-serif uppercase">About Me.</h1>
+      <div className="flex justify-between items-center">
+        <Typography element="h1">About Me.</Typography>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
