@@ -44,6 +44,11 @@ export default function NavSelect() {
                 BMI CALCULATOR
             </li>
           </Link>
+          <Link href="/tic-ta-toe">
+            <li className="border-b p-2 border-white border-opacity-5 bg-zinc-800">
+                Tac Ta Toe
+            </li>
+          </Link>
         </ul>
       ) : null}
     </li>
