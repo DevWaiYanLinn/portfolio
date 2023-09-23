@@ -1,12 +1,6 @@
 "use client";
-import { Metadata } from "next";
 import Head from "next/head";
 import { TypeAnimation } from "react-type-animation";
-
-export const metadata: Metadata = {
-  title: "Wai Yan Lin",
-  description: "Home Page",
-};
 
 export default function Page() {
   return (
@@ -24,7 +18,10 @@ export default function Page() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://portfolio-devwaiyanlinn.vercel.app/" />
+        <meta
+          property="og:url"
+          content="https://portfolio-devwaiyanlinn.vercel.app/"
+        />
         <meta property="og:title" content="Wai Yan Lin (Backend  Developer)" />
         <meta
           property="og:description"
@@ -34,13 +31,13 @@ export default function Page() {
             acquire a diverse set of skills, including MySQL, Node.js,
             JavaScript, MongoDB, React, and other cutting-edge technologies."
         />
-        <meta
-          property="og:image"
-          content="/p.jpeg"
-        />
+        <meta property="og:image" content="/p.jpeg" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://portfolio-devwaiyanlinn.vercel.app/" />
+        <meta
+          property="twitter:url"
+          content="https://portfolio-devwaiyanlinn.vercel.app/"
+        />
         <meta
           property="twitter:title"
           content="Wai Yan Lin (Backend  Developer)"
@@ -53,10 +50,7 @@ export default function Page() {
             acquire a diverse set of skills, including MySQL, Node.js,
             JavaScript, MongoDB, React, and other cutting-edge technologies."
         />
-        <meta
-          property="twitter:image"
-          content="/p.jpeg"
-        />
+        <meta property="twitter:image" content="/p.jpeg" />
       </Head>
       <div className="h-screen -mt-20 w-full flex flex-col justify-center items-center">
         <h1 className="xs:text-4xl md:text-6xl font-serif">WAI YAN LIN</h1>
