@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Typography from "../_components/common/Typography";
-import TextField from "../_components/common/TextField";
-import Button from "../_components/common/Button";
+import Typography from "../_utils/components/common/Typography";
+import TextField from "../_utils/components/common/TextField";
+import Button from "../_utils/components/common/Button";
 import { useMemo, useState } from "react";
 
 export default function BmiCalculator() {
