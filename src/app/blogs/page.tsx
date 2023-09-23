@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Typography from "../_components/common/Typography";
+import Typography from "../_utils/components/common/Typography";
+import Card from "./_components/Card";
 
 export default function Page() {
   return (
@@ -24,66 +24,26 @@ export default function Page() {
       </div>
       <hr className="border-dashed mt-3" />
       <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-3 gap-10">
-        <div className=" border border-white border-opacity-20 pb-10">
-          <Image
-            loading="lazy"
-            src={"/blogs/python.svg"}
-            alt="food-order"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Food Mini Order System</p>
-            <p className="mt-3 text-xs">Python</p>
-          </div>
-        </div>
-        <div className=" border border-white border-opacity-20 pb-10">
-          <Image
-            loading="lazy"
-            src={"/blogs/node-js.svg"}
-            alt="node-js"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Fastify MVC</p>
-            <p className="mt-3 text-xs">Node.JS</p>
-          </div>
-        </div>
-        <div className=" border border-white border-opacity-20 pb-10">
-          <Image
-            loading="lazy"
-            src={"/blogs/javascript.svg"}
-            alt="javascript"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Lazy Loading Image</p>
-            <p className="mt-3 text-xs">Javascript</p>
-          </div>
-        </div>
-        <div className=" border border-white border-opacity-20 pb-10">
-          <Image
-            loading="lazy"
-            src={"/blogs/javascript.svg"}
-            alt="javascript"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <div className="font-serif md:ADLaM-font bg-zinc-900 text-white p-5 mx-8 -mt-10 z-10 relative text-center">
-            <p>Myanmar's Townships</p>
-            <p className="mt-3 text-xs">HTML, CSS, Javascript</p>
-          </div>
-        </div>
+        <Card
+          title="Food Mini Order System"
+          language="Python"
+          src="/blogs/python.svg"
+        ></Card>
+        <Card
+          title="Fastify Mvc"
+          language="Node.JS"
+          src="/blogs/node-js.svg"
+        ></Card>
+        <Card
+          title="Lazyloading Image"
+          language="Javascript"
+          src="/blogs/javascript.svg"
+        ></Card>
+        <Card
+          title="Myanmar's Townships"
+          language="HTML, CSS, Javascript"
+          src="/blogs/javascript.svg"
+        ></Card>
       </div>
     </>
   );

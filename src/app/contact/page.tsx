@@ -1,7 +1,8 @@
-import Button from "../_components/common/Button";
-import TextArea from "../_components/common/TextArea";
-import TextField from "../_components/common/TextField";
-import Typography from "../_components/common/Typography";
+'use client'
+import Button from "../_utils/components/common/Button";
+import TextArea from "../_utils/components/common/TextArea";
+import TextField from "../_utils/components/common/TextField";
+import Typography from "../_utils/components/common/Typography";
 
 export default function Page() {
   return (

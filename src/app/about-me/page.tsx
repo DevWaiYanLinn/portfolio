@@ -1,4 +1,5 @@
-import Typography from "../_components/common/Typography";
+'use client'
+import Typography from "../_utils/components/common/Typography";
 
 export default function Page() {
   return (
@@ -95,7 +96,7 @@ export default function Page() {
           </span>
         </h2>
         <div className="grid xs:grid-cols-1 md:grid-cols-3 gap-10 xs:gap-6 xs:mt-5 mt-10">
-          <div className="text-center border border-white border-opacity-10 p-5">
+          <div className="card">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +119,7 @@ export default function Page() {
               asperiores corporis provident aut libero
             </p>
           </div>
-          <div className="text-center border border-white border-opacity-10 p-5">
+          <div className="card">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +142,7 @@ export default function Page() {
               asperiores corporis provident aut libero
             </p>
           </div>
-          <div className="text-center border border-white border-opacity-10 p-5">
+          <div className="card">
             <div className="flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

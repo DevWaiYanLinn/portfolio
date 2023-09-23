@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("./_utils/css/index.css");
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap");
 
 :root {
@@ -18,34 +19,44 @@
   }
 }
 
-@layer {
-  .g-bg {
-    background: rgba(74, 144, 226, 0.6);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-}
-
 @layer components {
-  .ADLaM-font {
-    font-family: "ADLaM Display", cursive;
+  .card {
+    @apply text-center dark:border shadow-md dark:shadow-none dark:border-white dark:border-opacity-10 p-5 rounded-md dark:rounded-none;
   }
-  
+
   .nav-item {
-    @apply py-3 border-b border-white border-opacity-5;
+    @apply py-3 border-b dark:border-white dark:border-opacity-5  border-black border-opacity-5;
   }
 
   .nav-link {
-    @apply flex pl-5 items-center text-white;
+    @apply flex pl-5 items-center dark:text-white;
   }
 
   .nav-link span {
     @apply ml-2 text-[12px];
   }
+}
 
-  .show-sidebar {
-    @apply xs:!ml-0 transition-[0.5s];
+@layer utilities {
+  .switch-theme .sun {
+    display: none;
+  }
+
+  .switch-theme .moon {
+    display:  block;
+  }
+
+  .switch-theme {
+    background: #242424;
+  }
+  .dark .switch-theme {
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+  }
+
+  .dark .switch-theme svg.sun {
+    display: block;
+  }
+  .dark .switch-theme svg.moon {
+    display: none;
   }
 }
